@@ -1,16 +1,26 @@
+/* Color Palette */
+.first-color { 
+    background: #f6f6f6; /* Light gray */
+}
+.second-color { 
+    background: #d6e4f0; /* Light blue */
+}
+.third-color { 
+    background: #1e56a0; /* Dark blue */
+}
+.fourth-color { 
+    background: #163172; /* Deeper blue */
+}
+
+/* Global Styles */
 body{
     margin: 0px;
     transition: all 1s;
-    background-color: #f5f5f5; /* Light grey background for a neutral look */
+    background-color: #f6f6f6; /* Matching .first-color */
+    font-family: 'Calibri Light', sans-serif; /* Calibri Light font */
 }
-@font-face {
-    font-family: 'Nunito-Bold';
-    src:url(../fonts/Nunito-Bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'OpenSans-Regular';
-    src:url(../fonts/OpenSans-Regular.ttf) format('truetype');
-}
+
+/* Header */
 .mainHeader{
     position: fixed; 
     top: -60px; 
@@ -19,68 +29,54 @@ body{
     z-index: 1;
     padding-left: 0px;
     padding-right: 0px;
-    background-color: #35495e; /* Dark blue for header */
-}
-/* Updated CSS for a subtle glowing text effect */
-.neon-text, .neon-text-1 {
-    color: #2c3e50; /* Dark slate for text */
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Soft white glow */
-    animation: none; /* Removing the glowing animation for a more professional look */
+    background-color: #1e56a0; /* Matching .third-color */
 }
 
+/* Neon Text - Removed glowing effect for professional appearance */
+.neon-text, .neon-text-1 {
+    color: #163172; /* Matching .fourth-color */
+    text-shadow: none; /* Removing for a cleaner look */
+}
+
+/* Header Section */
 .header-section {
-    background: #deecdf; /* Soft green background */
-    background-image: url('../img/1.jpg');
-    text-align: center;
+    background-color: #d6e4f0; /* Matching .second-color */
+    text-align: left; /* Aligning text to the left */
     min-height: 500px;
-    height:100vh;
+    height: 100vh;
 }
 .header-section h2 {
-    font-family: 'Nunito-Bold';
-    color: #35495e; /* Dark blue for headings */
+    color: #163172; /* Matching .fourth-color */
 }
 .header-section span {
-    color: #4a90e2; /* Soft blue for highlights */
+    color: #1e56a0; /* Matching .third-color */
 }
 .header-section p {
-    color: #627d98; /* Soft grey for text */
-}
-span.glyphicon.glyphicon-triangle-bottom {
-    background-color: #4a90e2; /* Soft blue for buttons and icons */
-}
-.about{
-    background: #e1e8ed; /* Light grey background */
-}
-.about h3, .experience h3, .projects h3 {
-    color: #35495e; /* Dark blue for section headings */
-}
-.hero{
-    background: #2c3e50; /* Dark slate background for hero sections */
-}
-h1{
-    color: #ffffff; /* White for hero text */
-}
-.figure img:hover{
-    transform: scale(1.1); /* Subtle zoom on hover */
-}
-#myBtn {
-    background-color: #5c6b77; /* Dark grey for scroll to top button */
-}
-.progress-bar-success, .progress-bar-info, .progress-bar-warning, .progress-bar-danger {
-    background-color: #4a90e2; /* Using the same soft blue for progress bars for consistency */
-}
-.contact-section, .mainFooter{
-    background-color: #2c3e50; /* Dark slate for contact section and footer */
-}
-.contact-details input[type="submit"]:hover {
-    background: #4a90e2; /* Soft blue for button hover */
-}
-.navbar-inverse {
-    background-color: #35495e; /* Dark blue for navbar */
-}
-.navbar-inverse .navbar-nav>li:hover {
-    background-color: #4a90e2; /* Soft blue for navbar item hover */
+    color: #163172; /* Text color to match .fourth-color for better readability */
 }
 
-/* Additional adjustments for a cohesive look */
-/* Ensure all text colors, backgrounds, and interactive elements support the new palette */
+/* Button */
+#myBtn {
+    background-color: #163172; /* Dark grey replaced with .fourth-color */
+}
+
+/* Contact Section, Footer */
+.contact-section, .mainFooter{
+    background-color: #1e56a0; /* Matching .third-color */
+}
+.contact-details input[type="submit"]:hover {
+    background: #d6e4f0; /* Soft blue for button hover, matching .second-color */
+}
+
+/* Navbar */
+.navbar-inverse {
+    background-color: #163172; /* Dark blue for navbar, matching .fourth-color */
+}
+.navbar-inverse .navbar-nav>li:hover {
+    background-color: #d6e4f0; /* Soft blue for navbar item hover, matching .second-color */
+}
+
+/* Additional Notes:
+- Ensure all font references are updated to 'Calibri Light', sans-serif; where needed.
+- Adjust any other specific styles (not covered here) to align with the new color palette and font as necessary.
+*/
