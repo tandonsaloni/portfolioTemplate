@@ -1,82 +1,61 @@
-/* Color Palette */
+body {
+    margin: 0px;
+    transition: all 1s;
+    font-family: 'Calibri Light', Arial, sans-serif; /* Fallback to Arial and sans-serif if Calibri Light is unavailable */
+}
+
 .first-color { 
     background: #f6f6f6; /* Light gray */
 }
+
 .second-color { 
     background: #d6e4f0; /* Light blue */
 }
+
 .third-color { 
     background: #1e56a0; /* Dark blue */
 }
+
 .fourth-color { 
-    background: #163172; /* Deeper blue */
+    background: #163172; /* Even darker blue */
 }
 
-/* Global Styles */
-body{
-    margin: 0px;
-    transition: all 1s;
-    background-color: #f6f6f6; /* Matching .first-color */
-    font-family: 'Calibri Light', sans-serif; /* Calibri Light font */
+.mainHeader, .contact-details input[type="submit"], .navbar-inverse {
+    background: #1e56a0; /* Using third-color for consistency */
+    color: #f6f6f6; /* Light text for dark backgrounds */
 }
 
-/* Header */
-.mainHeader{
-    position: fixed; 
-    top: -60px; 
-    transition: all 0.5s;
-    width: 100vw;
-    z-index: 1;
-    padding-left: 0px;
-    padding-right: 0px;
-    background-color: #1e56a0; /* Matching .third-color */
+.neon-text, .neon-text-1, .header-section h2, .about h3, .experience h3, .projects h3 {
+    color: #163172; /* Using fourth-color for a professional look */
+    text-shadow: none; /* Removing neon effect for professionalism */
 }
 
-/* Neon Text - Removed glowing effect for professional appearance */
-.neon-text, .neon-text-1 {
-    color: #163172; /* Matching .fourth-color */
-    text-shadow: none; /* Removing for a cleaner look */
+.header-section, .about, .contact-section {
+    background: #d6e4f0; /* Using second-color for light backgrounds */
 }
 
-/* Header Section */
-.header-section {
-    background-color: #d6e4f0; /* Matching .second-color */
-    text-align: left; /* Aligning text to the left */
-    min-height: 500px;
-    height: 100vh;
-}
-.header-section h2 {
-    color: #163172; /* Matching .fourth-color */
-}
-.header-section span {
-    color: #1e56a0; /* Matching .third-color */
-}
-.header-section p {
-    color: #163172; /* Text color to match .fourth-color for better readability */
+/* Removing neon glow and updating font families */
+@keyframes glowing {
+    to {
+        text-shadow: none;
+    }
 }
 
-/* Button */
-#myBtn {
-    background-color: #163172; /* Dark grey replaced with .fourth-color */
+/* Updating all text, buttons, and other elements to match the new color scheme */
+span.glyphicon {
+    background-color: #1e56a0; /* Dark blue background for icons */
+    color: #f6f6f6; /* Light text on dark background */
 }
 
-/* Contact Section, Footer */
-.contact-section, .mainFooter{
-    background-color: #1e56a0; /* Matching .third-color */
-}
-.contact-details input[type="submit"]:hover {
-    background: #d6e4f0; /* Soft blue for button hover, matching .second-color */
+.mainFooter {
+    background-color: #163172; /* Using fourth-color for footer */
+    color: #f6f6f6; /* Ensuring readability with light text */
 }
 
-/* Navbar */
-.navbar-inverse {
-    background-color: #163172; /* Dark blue for navbar, matching .fourth-color */
-}
-.navbar-inverse .navbar-nav>li:hover {
-    background-color: #d6e4f0; /* Soft blue for navbar item hover, matching .second-color */
+/* Ensure text is properly aligned and paragraphs are well-defined */
+.panel-body {
+    text-align: left; /* Ensuring text is left-aligned */
 }
 
-/* Additional Notes:
-- Ensure all font references are updated to 'Calibri Light', sans-serif; where needed.
-- Adjust any other specific styles (not covered here) to align with the new color palette and font as necessary.
-*/
+/* Update specific classes and IDs with new color palette */
+/* Add or adjust classes and IDs according to your HTML structure */
